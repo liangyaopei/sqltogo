@@ -1,4 +1,4 @@
-package data
+package sql_to_go_test
 
 import (
 	"time"

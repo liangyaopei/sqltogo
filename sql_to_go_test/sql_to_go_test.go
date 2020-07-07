@@ -1,4 +1,4 @@
-package sql_to_go
+package sql_to_go_test
 
 import (
 	"fmt"
@@ -6,12 +6,14 @@ import (
 	"os"
 	"os/exec"
 	"testing"
+
+	"github.com/liangyaopei/sql_to_go"
 )
 
 func TestSqlToGo(t *testing.T) {
-	inputFile := "./data/input.sql"
-	output := "./data/output.go"
-	pkgName := "data"
+	inputFile := "./input.sql"
+	output := "./_output.go"
+	pkgName := "sql_to_go_test"
 	// read input data
 	data, err := ioutil.ReadFile(inputFile)
 	if err != nil {
@@ -19,7 +21,7 @@ func TestSqlToGo(t *testing.T) {
 		return
 	}
 	sqlStmt := string(data)
-	res, err := SqlToGo(sqlStmt, pkgName)
+	res, err := sql_to_go.SqlToGo(sqlStmt, pkgName)
 	if err != nil {
 		t.Errorf("read file err:%s", err.Error())
 		return
