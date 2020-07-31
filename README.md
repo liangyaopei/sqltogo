@@ -1,3 +1,5 @@
+[![Go Report Card](https://goreportcard.com/badge/github.com/liangyaopei/sqltogo)](https://goreportcard.com/report/github.com/liangyaopei/sqltogo)
+[![GoDoc](https://godoc.org/github.com/liangyaopei/sqltogo?status.svg)](http://godoc.org/github.com/liangyaopei/sqltogo)
 [中文版说明](./README_zh.md)
 
 ## Description

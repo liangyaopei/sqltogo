@@ -7,7 +7,7 @@ import (
 	"os/exec"
 	"testing"
 
-	"github.com/liangyaopei/sql_to_go"
+	"github.com/liangyaopei/sqltogo"
 )
 
 func TestSqlToGo(t *testing.T) {
@@ -21,7 +21,7 @@ func TestSqlToGo(t *testing.T) {
 		return
 	}
 	sqlStmt := string(data)
-	res, err := sql_to_go.SqlToGo(sqlStmt, pkgName)
+	res, err := sqltogo.SqlToGo(sqlStmt, pkgName)
 	if err != nil {
 		t.Errorf("read file err:%s", err.Error())
 		return

@@ -1,4 +1,4 @@
-module github.com/liangyaopei/sql_to_go
+module github.com/liangyaopei/sqltogo
 
 go 1.14
 

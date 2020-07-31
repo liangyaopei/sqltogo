@@ -1,4 +1,4 @@
-package sql_to_go
+package sqltogo
 
 var sqlTypeMap = map[string]string{
 	"int":                "int",
